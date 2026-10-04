@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM Marketing | Fatima Melhem - Luxury Social Media & Digital Agency</title>
+  <meta name="description" content="FM Marketing Agency by Fatima Melhem. Elevating luxury brands with bespoke social media strategies, cinematic 4K viral reels, and high-converting performance marketing.">
+  <meta name="keywords" content="Fatima Melhem, FM Marketing, Social Media Agency, Luxury Marketing, Content Creation, Viral Reels, Meta Ads, TikTok Growth, Dubai, Beirut, Riyadh">
+  <meta name="author" content="Fatima Melhem">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FM Marketing | Fatima Melhem Agency">
+  <meta property="og:description" content="Bespoke Social Media Management, Luxury Content Production & Digital Growth for Visionary Brands.">
+  <meta property="og:image" content="assets/images/logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Luxury Aura & Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo-link">
+        <img src="assets/images/logo.jpg" alt="FM Marketing Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">FM MARKETING</span>
+          <span class="brand-subtitle">FATIMA MELHEM</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">About Fatima</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+        <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="#calculator" class="nav-link" data-i18n="nav.calculator">ROI Estimator</a></li>
+        <li><a href="#packages" class="nav-link" data-i18n="nav.packages">Packages</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Language Switcher Button -->
+        <button id="lang-toggle-btn" class="lang-switcher-btn" aria-label="Toggle Language">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span id="lang-label">العربية</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary" data-i18n="nav.book">Book Discovery Call</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="section-badge" data-i18n="hero.badge">
+          ✨ Bespoke Social Media & Luxury Digital Marketing
+        </div>
+
+        <h1 class="hero-title">
+          <span data-i18n="hero.title1">Transforming Brands Into</span><br>
+          <span class="text-gold-gradient" data-i18n="hero.title2">Iconic Digital Authorities</span>
+        </h1>
+
+        <p class="hero-description" data-i18n="hero.subtitle">
+          Fatima Melhem Marketing Agency crafts viral storytelling, high-converting ad campaigns, and prestige visual content that turn viewers into loyal, high-paying clientele.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary" data-i18n="hero.btn.services">Explore Our Services</a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero.btn.consult">Schedule Strategy Call</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-number" data-i18n="hero.stat1.val">+350%</span>
+            <span class="metric-label" data-i18n="hero.stat1.lbl">Average Client ROI</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-i18n="hero.stat2.val">25M+</span>
+            <span class="metric-label" data-i18n="hero.stat2.lbl">Organic Impressions</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-i18n="hero.stat3.val">98.4%</span>
+            <span class="metric-label" data-i18n="hero.stat3.lbl">Client Retention</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="hero-visual-wrapper reveal">
+        <div class="hero-card-frame">
+          <img src="assets/images/hero.jpg" alt="FM Marketing Studio & Campaign Analytics" class="hero-card-image">
+          
+          <div class="hero-floating-badge">
+            <div class="badge-icon">FM</div>
+            <div>
+              <div class="badge-text-title">FM Marketing Agency</div>
+              <div class="badge-text-sub" data-i18n="hero.badge.floating">Top 1% Aesthetic & Strategy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LIVE METRICS COUNTERS BANNER
+       ========================================================================== -->
+  <section class="stats-banner">
+    <div class="container stats-grid">
+      <div class="stat-box">
+        <span class="stat-box-num counter-val" data-target="25000000" data-prefix="+" data-suffix="">+25,000,000</span>
+        <span class="stat-box-desc" data-i18n="counter.impressions">Monthly Impressions Driven</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-box-num counter-val" data-target="185" data-prefix="+" data-suffix="">+185</span>
+        <span class="stat-box-desc" data-i18n="counter.campaigns">Successful Viral Campaigns</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-box-num counter-val" data-target="380" data-prefix="+" data-suffix="%">+380%</span>
+        <span class="stat-box-desc" data-i18n="counter.growth">Average Account Growth</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-box-num counter-val" data-target="99" data-prefix="" data-suffix=".2%">99.2%</span>
+        <span class="stat-box-desc" data-i18n="counter.satisfaction">Client Satisfaction Score</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT FATIMA MELHEM & AGENCY PHILOSOPHY
+       ========================================================================== -->
+  <section id="about" class="section-spacing">
+    <div class="container about-grid">
+      <div class="founder-visual-card reveal">
+        <div class="founder-img-frame">
+          <img src="assets/images/fatima.jpg" alt="Fatima Melhem - Founder & Creative Director" class="founder-img">
+          <div class="founder-card-overlay">
+            <div class="founder-name-tag" data-i18n="about.founder.name">Fatima Melhem</div>
+            <div class="founder-title-tag" data-i18n="about.founder.role">Founder & Creative Director</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-content reveal">
+        <div class="section-badge" data-i18n="about.tag">ABOUT THE FOUNDER & AGENCY</div>
+        <h2 class="section-title font-heading" data-i18n="about.title">
+          Where Creative Artistry Meets High-Performance Marketing
+        </h2>
+
+        <p class="about-lead-para" data-i18n="about.p1">
+          Founded by Fatima Melhem, <strong>FM Marketing Agency</strong> was born out of a passion for luxury aesthetics, viral storytelling, and data-driven digital dominance. We believe every ambitious brand deserves a bespoke presence that stands out with elegance and commands market respect.
+        </p>
+
+        <p class="about-body-para" data-i18n="about.p2">
+          We don’t just post content; we engineer high-impact social media ecosystems. From haute-couture fashion houses and boutique cosmetic brands to luxury hospitality and executive personal branding, we tailor unique digital blueprints that generate unmatched brand prestige and sustainable revenue.
+        </p>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <span class="pillar-icon">💎</span>
+            <div class="pillar-title" data-i18n="about.pillar1.title">Aesthetic Precision</div>
+            <p class="pillar-desc" data-i18n="about.pillar1.desc">Every pixel, color palette, and video frame is crafted to meet international luxury standards.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-icon">📈</span>
+            <div class="pillar-title" data-i18n="about.pillar2.title">Data-Driven ROI</div>
+            <p class="pillar-desc" data-i18n="about.pillar2.desc">We combine creative vision with deep analytical targeting to maximize customer conversions.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-icon">🎬</span>
+            <div class="pillar-title" data-i18n="about.pillar3.title">Viral Storytelling</div>
+            <p class="pillar-desc" data-i18n="about.pillar3.desc">Reels and TikTok strategies designed to capture algorithm momentum and organic virality.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-icon">👑</span>
+            <div class="pillar-title" data-i18n="about.pillar4.title">White-Glove VIP Service</div>
+            <p class="pillar-desc" data-i18n="about.pillar4.desc">Dedicated strategic attention tailored specifically to your brand's unique voice and goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES SECTION
+       ========================================================================== -->
+  <section id="services" class="section-spacing" style="background: linear-gradient(180deg, transparent 0%, rgba(27, 8, 15, 0.4) 50%, transparent 100%);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge" data-i18n="services.tag">OUR SIGNATURE SERVICES</div>
+        <h2 class="section-title font-heading" data-i18n="services.title">Comprehensive Solutions for Exponential Brand Growth</h2>
+        <p class="section-subtitle" data-i18n="services.subtitle">We provide end-to-end creative and digital growth strategies tailored to amplify your brand across all digital touchpoints.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal">
+          <div class="service-top-row">
+            <div class="service-icon-box">📱</div>
+            <span class="service-tag" data-i18n="s1.tag">Full Management</span>
+          </div>
+          <h3 class="service-title" data-i18n="s1.title">Social Media Management</h3>
+          <p class="service-desc" data-i18n="s1.desc">Complete turnkey management of your Instagram, TikTok, and LinkedIn platforms with daily aesthetic curation, community engagement, and algorithmic optimization.</p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s1.feat1">Strategic monthly content calendar</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s1.feat2">Active community & direct message management</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s1.feat3">Grid curation & visual feed aesthetics</span>
+            </li>
+          </ul>
+          <a href="#contact" class="service-action-link"><span data-i18n="services.cta.btn">Request Custom Proposal</span> →</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal">
+          <div class="service-top-row">
+            <div class="service-icon-box">🎥</div>
+            <span class="service-tag" data-i18n="s2.tag">Content Creation</span>
+          </div>
+          <h3 class="service-title" data-i18n="s2.title">High-End Content & Reels Production</h3>
+          <p class="service-desc" data-i18n="s2.desc">Cinematic 4K reels, editorial product shoots, and trend-setting short-form videos directed to stop the scroll and captivate high-value audiences.</p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s2.feat1">On-location and studio direction</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s2.feat2">4K cinematic filming & luxury color grading</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s2.feat3">Viral audio & hook scripting</span>
+            </li>
+          </ul>
+          <a href="#contact" class="service-action-link"><span data-i18n="services.cta.btn">Request Custom Proposal</span> →</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal">
+          <div class="service-top-row">
+            <div class="service-icon-box">🎯</div>
+            <span class="service-tag" data-i18n="s3.tag">Paid Advertising</span>
+          </div>
+          <h3 class="service-title" data-i18n="s3.title">Targeted Performance & Paid Ads</h3>
+          <p class="service-desc" data-i18n="s3.desc">Hyper-targeted Meta (Instagram/Facebook) & TikTok advertising campaigns engineered for maximum return on ad spend (ROAS) and continuous lead flow.</p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s3.feat1">Audience segmentation & pixel tracking</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s3.feat2">A/B creative testing & copywriting</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s3.feat3">Transparent ROI reporting & continuous optimization</span>
+            </li>
+          </ul>
+          <a href="#contact" class="service-action-link"><span data-i18n="services.cta.btn">Request Custom Proposal</span> →</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal">
+          <div class="service-top-row">
+            <div class="service-icon-box">✨</div>
+            <span class="service-tag" data-i18n="s4.tag">Brand Identity</span>
+          </div>
+          <h3 class="service-title" data-i18n="s4.title">Brand Identity & Visual Direction</h3>
+          <p class="service-desc" data-i18n="s4.desc">Crafting unforgettable luxury branding guidelines, bespoke typographic hierarchies, mood boards, and aesthetic tone of voice that establish instant authority.</p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s4.feat1">Brand mood boards & color system</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s4.feat2">Social media design kit & templates</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s4.feat3">Brand story & positioning statement</span>
+            </li>
+          </ul>
+          <a href="#contact" class="service-action-link"><span data-i18n="services.cta.btn">Request Custom Proposal</span> →</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card reveal">
+          <div class="service-top-row">
+            <div class="service-icon-box">🌟</div>
+            <span class="service-tag" data-i18n="s5.tag">PR & Influencers</span>
+          </div>
+          <h3 class="service-title" data-i18n="s5.title">Influencer Relations & VIP PR</h3>
+          <p class="service-desc" data-i18n="s5.desc">Connecting your business with curated tastemakers, creators, and VIP influencers who align seamlessly with your luxury brand persona.</p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s5.feat1">Vetted influencer matching & vetting</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s5.feat2">Gifting campaigns & PR activations</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s5.feat3">Deliverable tracking & engagement analysis</span>
+            </li>
+          </ul>
+          <a href="#contact" class="service-action-link"><span data-i18n="services.cta.btn">Request Custom Proposal</span> →</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card reveal">
+          <div class="service-top-row">
+            <div class="service-icon-box">📊</div>
+            <span class="service-tag" data-i18n="s6.tag">Consultation</span>
+          </div>
+          <h3 class="service-title" data-i18n="s6.title">Strategic Audits & VIP Consultation</h3>
+          <p class="service-desc" data-i18n="s6.desc">In-depth forensic audit of your current digital footprint with a tailored 90-day actionable roadmap to scale engagement, reach, and sales.</p>
+          <ul class="service-features-list">
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s6.feat1">Comprehensive competitor & SWOT analysis</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s6.feat2">Algorithm & engagement bottleneck diagnostic</span>
+            </li>
+            <li class="service-feature-item">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="s6.feat3">1-on-1 strategy session with Fatima Melhem</span>
+            </li>
+          </ul>
+          <a href="#contact" class="service-action-link"><span data-i18n="services.cta.btn">Request Custom Proposal</span> →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PORTFOLIO & CASE STUDIES
+       ========================================================================== -->
+  <section id="portfolio" class="section-spacing">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge" data-i18n="portfolio.tag">PORTFOLIO & CASE STUDIES</div>
+        <h2 class="section-title font-heading" data-i18n="portfolio.title">Real Numbers. Real Influence. Real Prestige.</h2>
+        <p class="section-subtitle" data-i18n="portfolio.subtitle">Explore how we took visionary brands and scaled their presence to industry-leading milestones.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filter.all">All Projects</button>
+        <button class="filter-btn" data-filter="beauty" data-i18n="portfolio.filter.beauty">Beauty & Perfume</button>
+        <button class="filter-btn" data-filter="fashion" data-i18n="portfolio.filter.fashion">Fashion & Couture</button>
+        <button class="filter-btn" data-filter="hospitality" data-i18n="portfolio.filter.hospitality">Dining & Lifestyle</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-card reveal" data-category="beauty">
+          <div class="portfolio-img-wrap">
+            <img src="assets/images/portfolio_perfume.jpg" alt="Élixir Rouge Luxury Perfume" class="portfolio-img">
+            <span class="portfolio-cat-pill" data-i18n="p1.cat">Beauty & Luxury Fragrance</span>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title" data-i18n="p1.title">Élixir Rouge Parfum</h3>
+            <div class="portfolio-stat-highlight" data-i18n="p1.stat">+480% Online Sales Growth</div>
+            <p class="portfolio-desc" data-i18n="p1.desc">Curated an opulent visual aesthetic campaign and targeted ads that generated over 3.2M organic views and broke launch day sales records.</p>
+            <div class="portfolio-metrics-row">
+              <span class="portfolio-metric-badge" data-i18n="p1.metric1">3.2M+ Reach</span>
+              <a href="#" class="service-action-link view-case-btn" data-case-id="1" data-i18n="portfolio.modal.view">View Case Study →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-card reveal" data-category="fashion">
+          <div class="portfolio-img-wrap">
+            <img src="assets/images/portfolio_fashion.jpg" alt="Royal Crimson Couture" class="portfolio-img">
+            <span class="portfolio-cat-pill" data-i18n="p2.cat">Haute Couture & Apparel</span>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title" data-i18n="p2.title">Royal Crimson Couture</h3>
+            <div class="portfolio-stat-highlight" data-i18n="p2.stat">+145K Follower Community</div>
+            <p class="portfolio-desc" data-i18n="p2.desc">Complete social media rebranding, backstage fashion week reels, and VIP influencer gifting that elevated the label into high-society prominence.</p>
+            <div class="portfolio-metrics-row">
+              <span class="portfolio-metric-badge" data-i18n="p2.metric1">145K+ Followers</span>
+              <a href="#" class="service-action-link view-case-btn" data-case-id="2" data-i18n="portfolio.modal.view">View Case Study →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-card reveal" data-category="hospitality">
+          <div class="portfolio-img-wrap">
+            <img src="assets/images/portfolio_hospitality.jpg" alt="Opulence Skyline Lounge" class="portfolio-img">
+            <span class="portfolio-cat-pill" data-i18n="p3.cat">Luxury Hospitality & Dining</span>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title" data-i18n="p3.title">Opulence Skyline Lounge</h3>
+            <div class="portfolio-stat-highlight" data-i18n="p3.stat">Fully Booked 6 Weeks Ahead</div>
+            <p class="portfolio-desc" data-i18n="p3.desc">Viral TikTok & Instagram Reels campaign showcasing panoramic views, culinary elegance, and celebrity events leading to record reservations.</p>
+            <div class="portfolio-metrics-row">
+              <span class="portfolio-metric-badge" data-i18n="p3.metric1">5.6M Video Views</span>
+              <a href="#" class="service-action-link view-case-btn" data-case-id="3" data-i18n="portfolio.modal.view">View Case Study →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE ROI ESTIMATOR / STRATEGY CALCULATOR
+       ========================================================================== -->
+  <section id="calculator" class="section-spacing" style="background: linear-gradient(180deg, rgba(20, 6, 11, 0.6) 0%, transparent 100%);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge" data-i18n="calc.tag">INTERACTIVE ESTIMATOR</div>
+        <h2 class="section-title font-heading" data-i18n="calc.title">Estimate Your Brand's Growth Potential</h2>
+        <p class="section-subtitle" data-i18n="calc.subtitle">Select your goals and budget to see estimated reach, deliverables, and recommended bespoke strategy.</p>
+      </div>
+
+      <div class="estimator-box reveal">
+        <div class="estimator-grid">
+          <!-- Inputs Column -->
+          <div class="calc-inputs">
+            <div class="calc-group">
+              <label class="calc-label" data-i18n="calc.lbl.goal">Select Primary Goal:</label>
+              <select class="calc-select" id="calc-goal-select">
+                <option value="awareness" data-i18n="calc.goal.opt1">Brand Awareness & Viral Reach</option>
+                <option value="leads" data-i18n="calc.goal.opt2">Sales & Direct Customer Leads</option>
+                <option value="rebrand" data-i18n="calc.goal.opt3">Complete Social Rebranding</option>
+              </select>
+            </div>
+
+            <div class="calc-group">
+              <label class="calc-label" data-i18n="calc.lbl.budget">Monthly Investment Budget ($ USD):</label>
+              <div class="calc-range-wrapper">
+                <span class="range-val-display" id="calc-budget-display">$3,500</span>
+                <input type="range" min="1000" max="15000" step="500" value="3500" class="custom-range" id="calc-budget-range">
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Output Results Card -->
+          <div class="calc-results-card">
+            <div class="res-item">
+              <span class="res-label" data-i18n="calc.res.reach">Estimated Monthly Impressions:</span>
+              <span class="res-value-highlight" id="calc-res-reach-val">~1.5M - 2.2M</span>
+            </div>
+
+            <div class="res-item">
+              <span class="res-label" data-i18n="calc.res.content">Recommended Monthly Deliverables:</span>
+              <span class="res-value-text" id="calc-res-content-val" data-i18n="calc.res.content.val">16 Cinematic Reels + Paid Ad Scaling + Daily Stories</span>
+            </div>
+
+            <div class="res-item">
+              <span class="res-label" data-i18n="calc.res.package">Recommended Package Tier:</span>
+              <span class="res-value-text" id="calc-res-pkg-val" style="color: var(--gold-400); font-weight: 700;">The Signature Prestige Tier</span>
+            </div>
+
+            <a href="#contact" class="btn btn-primary" style="margin-top: 0.5rem;" data-i18n="calc.btn">Claim Your Strategy Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BESPOKE PARTNERSHIP PACKAGES
+       ========================================================================== -->
+  <section id="packages" class="section-spacing">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge" data-i18n="pkg.tag">TAILORED INVESTMENT</div>
+        <h2 class="section-title font-heading" data-i18n="pkg.title">Bespoke Partnership Packages</h2>
+        <p class="section-subtitle" data-i18n="pkg.subtitle">Flexible, high-caliber agency retainer plans tailored for ambitious founders and established luxury brands.</p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Tier 1 -->
+        <div class="package-card reveal">
+          <div class="pkg-header">
+            <h3 class="pkg-title" data-i18n="pkg1.name">The Boutique Growth</h3>
+            <p class="pkg-desc" data-i18n="pkg1.sub">Ideal for emerging brands ready to build an aesthetic authority.</p>
+          </div>
+          <ul class="pkg-features">
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg1.f1">Full Management of 2 Platforms</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg1.f2">8 High-Resolution Reels / Shorts</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg1.f3">Strategic Hashtags & SEO Optimization</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg1.f4">Monthly Analytics & Growth Report</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg1.f5">Community Engagement Support</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary" data-i18n="pkg.btn">Choose This Package</a>
+        </div>
+
+        <!-- Tier 2 (Featured) -->
+        <div class="package-card featured reveal">
+          <div class="package-badge" data-i18n="pkg2.badge">MOST POPULAR</div>
+          <div class="pkg-header">
+            <h3 class="pkg-title text-gold-gradient" data-i18n="pkg2.name">The Signature Prestige</h3>
+            <p class="pkg-desc" data-i18n="pkg2.sub">For established brands scaling aggressively with viral content & ads.</p>
+          </div>
+          <ul class="pkg-features">
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg2.f1">Full Management of Instagram, TikTok & LinkedIn</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg2.f2">16 Cinematic 4K Reels & Carousel Guides</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg2.f3">Paid Meta & TikTok Ad Campaign Management</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg2.f4">Influencer Outreach & VIP Gifting Protocol</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg2.f5">Bi-Weekly Strategy Calls with Fatima</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg2.f6">24/7 Priority Support & Dedicated Account Manager</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" data-i18n="pkg.btn">Choose This Package</a>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="package-card reveal">
+          <div class="pkg-header">
+            <h3 class="pkg-title" data-i18n="pkg3.name">The Omnichannel Empire</h3>
+            <p class="pkg-desc" data-i18n="pkg3.sub">Complete digital supremacy for luxury enterprises and multi-location brands.</p>
+          </div>
+          <ul class="pkg-features">
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg3.f1">Comprehensive Omnichannel Social Takeover</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg3.f2">Unlimited Scripting + 24+ Cinematic Productions</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg3.f3">Full Ad Spend Scaling & Retargeting Funnels</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg3.f4">Celebrity & High-Tier Creator Collaborations</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg3.f5">Custom Landing Page / Web Visual Optimization</span>
+            </li>
+            <li class="pkg-feat-item">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span data-i18n="pkg3.f6">Weekly Executive Review & Direct Access to Fatima</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary" data-i18n="pkg.btn">Choose This Package</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS SECTION
+       ========================================================================== -->
+  <section class="section-spacing" style="background: linear-gradient(180deg, transparent 0%, rgba(20, 6, 11, 0.4) 50%, transparent 100%);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge" data-i18n="test.tag">CLIENT VOICES</div>
+        <h2 class="section-title font-heading" data-i18n="test.title">What Our Exclusive Partners Say</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card reveal">
+          <div>
+            <div class="star-rating">★★★★★</div>
+            <p class="test-quote" data-i18n="test1.quote">“Fatima Melhem transformed our social media from an ordinary business profile into an aspirational luxury brand. Our sales tripled within the first quarter of working together!”</p>
+          </div>
+          <div class="test-author-block">
+            <div class="author-avatar">ER</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="test1.author">Elena Rostova</span>
+              <span class="author-role" data-i18n="test1.role">Founder, Élixir Rouge Paris</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card reveal">
+          <div>
+            <div class="star-rating">★★★★★</div>
+            <p class="test-quote" data-i18n="test2.quote">“The aesthetic quality of the video reels and the strategic precision behind their ad campaigns is unmatched. FM Marketing is easily the most talented agency we’ve ever partnered with.”</p>
+          </div>
+          <div class="test-author-block">
+            <div class="author-avatar">TM</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="test2.author">Tariq Al-Mansoor</span>
+              <span class="author-role" data-i18n="test2.role">Managing Director, Opulence Hospitality</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card reveal">
+          <div>
+            <div class="star-rating">★★★★★</div>
+            <p class="test-quote" data-i18n="test3.quote">“Fatima’s personal attention to detail and creative direction gave our couture collection the international spotlight it deserved. Truly a masterclass in digital elegance.”</p>
+          </div>
+          <div class="test-author-block">
+            <div class="author-avatar">ZH</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="test3.author">Zeina Haddad</span>
+              <span class="author-role" data-i18n="test3.role">Creative Director, Royal Crimson Couture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT & CONSULTATION BOOKING
+       ========================================================================== -->
+  <section id="contact" class="section-spacing">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge" data-i18n="contact.tag">START YOUR JOURNEY</div>
+        <h2 class="section-title font-heading" data-i18n="contact.title">Let’s Craft Something Extraordinary Together</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Ready to scale your brand to new heights? Book your strategic consultation or reach out directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Interactive Booking Form -->
+        <div class="contact-form-card reveal">
+          <form id="consultation-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="c-name" class="form-input" placeholder="Your Full Name" data-i18n-placeholder="contact.form.name" required>
+              </div>
+              <div class="form-group">
+                <input type="text" id="c-brand" class="form-input" placeholder="Brand / Company Name" data-i18n-placeholder="contact.form.brand" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input type="email" id="c-email" class="form-input" placeholder="Email Address" data-i18n-placeholder="contact.form.email" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="c-phone" class="form-input" placeholder="WhatsApp / Phone Number" data-i18n-placeholder="contact.form.phone">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="c-handle" class="form-input" placeholder="Instagram or TikTok (@handle)" data-i18n-placeholder="contact.form.handle">
+              </div>
+              <div class="form-group">
+                <select id="c-service" class="form-select">
+                  <option value="Full Social Media Management" data-i18n="contact.form.service.opt1">Full Social Media Management</option>
+                  <option value="Cinematic Content & Reels Production" data-i18n="contact.form.service.opt2">Cinematic Content & Reels Production</option>
+                  <option value="Performance Paid Ads" data-i18n="contact.form.service.opt3">Performance Paid Ads</option>
+                  <option value="Brand Identity & Strategy" data-i18n="contact.form.service.opt4">Brand Identity & Strategy</option>
+                  <option value="VIP Strategic Consultation" data-i18n="contact.form.service.opt5">VIP Strategic Consultation</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <textarea id="c-msg" class="form-textarea" placeholder="Tell us about your brand goals & vision..." data-i18n-placeholder="contact.form.msg"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact.form.btn">
+              Send Consultation Request
+            </button>
+          </form>
+        </div>
+
+        <!-- Direct Info & WhatsApp Cards -->
+        <div class="contact-info-column reveal">
+          <div class="info-card wa-card">
+            <div class="info-card-header">
+              <span class="info-icon">💬</span>
+              <div class="info-title" data-i18n="contact.wa.title">Instant Direct WhatsApp</div>
+            </div>
+            <p class="info-desc" data-i18n="contact.wa.desc">Prefer an instant conversation? Connect directly with Fatima Melhem's agency desk.</p>
+            <a href="https://wa.me/96170000000?text=Hello%20Fatima%20Melhem%20(FM%20Marketing),%20I%20would%20like%20to%20inquire%20about%20your%20agency%20services." target="_blank" class="btn btn-whatsapp" data-i18n="contact.wa.btn">
+              Chat on WhatsApp Now
+            </a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-header">
+              <span class="info-icon">✉️</span>
+              <div class="info-title" data-i18n="contact.email.title">Direct Agency Email</div>
+            </div>
+            <p style="color: var(--gold-400); font-weight: 700; font-size: 1.05rem;" data-i18n="contact.email.val">contact@fatimamelhem.com</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-header">
+              <span class="info-icon">🕒</span>
+              <div class="info-title" data-i18n="contact.hours.title">Consultation Hours</div>
+            </div>
+            <p style="color: var(--cream-muted); font-size: 0.92rem;" data-i18n="contact.hours.val">Monday - Saturday: 9:00 AM - 7:00 PM (GMT+3)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <a href="#home" class="brand-logo-link">
+          <img src="assets/images/logo.jpg" alt="FM Marketing Logo" class="brand-logo-img">
+          <div class="brand-text-block">
+            <span class="brand-title">FM MARKETING</span>
+            <span class="brand-subtitle">FATIMA MELHEM</span>
+          </div>
+        </a>
+        <p class="footer-desc" data-i18n="footer.desc">
+          FM Marketing by Fatima Melhem is a premier boutique marketing agency specializing in luxury branding, viral social media management, and performance digital strategies.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title" data-i18n="footer.links.title">Quick Navigation</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#home" class="footer-nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" class="footer-nav-link" data-i18n="nav.about">About Fatima</a></li>
+          <li><a href="#services" class="footer-nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="#portfolio" class="footer-nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li><a href="#packages" class="footer-nav-link" data-i18n="nav.packages">Packages</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title" data-i18n="footer.services.title">Our Expertise</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#services" class="footer-nav-link" data-i18n="s1.title">Social Media Management</a></li>
+          <li><a href="#services" class="footer-nav-link" data-i18n="s2.title">Content & Reels Production</a></li>
+          <li><a href="#services" class="footer-nav-link" data-i18n="s3.title">Targeted Paid Ads</a></li>
+          <li><a href="#services" class="footer-nav-link" data-i18n="s4.title">Luxury Brand Identity</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title" data-i18n="footer.social.title">Connect & Follow</h4>
+        <div class="social-links-row">
+          <a href="https://instagram.com" target="_blank" class="social-icon-btn" aria-label="Instagram">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" class="social-icon-btn" aria-label="TikTok">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon-btn" aria-label="LinkedIn">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://wa.me/96170000000" target="_blank" class="social-icon-btn" aria-label="WhatsApp">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p data-i18n="footer.rights">© 2026 FM Marketing - Fatima Melhem Agency. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Direct WhatsApp Button -->
+  <a href="https://wa.me/96170000000?text=Hello%20Fatima%20Melhem,%20I%20would%20like%20to%20inquire%20about%20your%20agency%20services." target="_blank" class="floating-wa-btn" aria-label="Direct WhatsApp Chat">
+    <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <!-- Case Study Preview Modal -->
+  <div class="modal-overlay" id="portfolio-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">✕</button>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toast-notice"></div>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
