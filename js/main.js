@@ -1,6 +1,6 @@
 /**
  * FM Marketing - Fatima Melhem Agency
- * Interactive Logic, Internationalization & Animations
+ * Interactive Logic, Internationalization (Arabic Default) & Animations
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,26 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initScrollReveal();
   initCounters();
-  initPortfolioFilter();
   initEstimator();
   initContactForm();
-  initPortfolioModal();
 });
 
 /* ==========================================================================
-   1. LANGUAGE & INTERNATIONALIZATION (EN / AR)
+   1. LANGUAGE & INTERNATIONALIZATION (AR Default / EN)
    ========================================================================== */
-let currentLang = localStorage.getItem('fm_lang') || 'en';
+let currentLang = localStorage.getItem('fm_lang') || 'ar';
 
 function initLanguage() {
   const langToggleBtn = document.getElementById('lang-toggle-btn');
-  const langLabel = document.getElementById('lang-label');
 
   applyLanguage(currentLang);
 
   if (langToggleBtn) {
     langToggleBtn.addEventListener('click', () => {
-      currentLang = currentLang === 'en' ? 'ar' : 'en';
+      currentLang = currentLang === 'ar' ? 'en' : 'ar';
       localStorage.setItem('fm_lang', currentLang);
       applyLanguage(currentLang);
     });
@@ -43,7 +40,7 @@ function applyLanguage(lang) {
 
   const langLabel = document.getElementById('lang-label');
   if (langLabel) {
-    langLabel.textContent = lang === 'en' ? 'العربية' : 'English';
+    langLabel.textContent = lang === 'ar' ? 'English' : 'العربية';
   }
 
   // Translate all [data-i18n] text nodes
@@ -198,7 +195,7 @@ function initScrollReveal() {
 }
 
 /* ==========================================================================
-   6. ANIMATED STATISTICS COUNTERS
+   6. ANIMATED STATISTICS COUNTERS (Realistic Scale)
    ========================================================================== */
 function initCounters() {
   const counterItems = document.querySelectorAll('.counter-val');
@@ -213,7 +210,7 @@ function initCounters() {
             const target = parseInt(counter.getAttribute('data-target'), 10);
             const prefix = counter.getAttribute('data-prefix') || '';
             const suffix = counter.getAttribute('data-suffix') || '';
-            const duration = 2000;
+            const duration = 1800;
             const step = Math.ceil(target / (duration / 25));
             let current = 0;
 
@@ -239,37 +236,7 @@ function initCounters() {
 }
 
 /* ==========================================================================
-   7. PORTFOLIO FILTER
-   ========================================================================== */
-function initPortfolioFilter() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const portfolioCards = document.querySelectorAll('.portfolio-card');
-
-  filterBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.getAttribute('data-filter');
-
-      portfolioCards.forEach((card) => {
-        const category = card.getAttribute('data-category');
-        if (filter === 'all' || filter === category) {
-          card.style.display = 'flex';
-          card.style.opacity = '0';
-          setTimeout(() => {
-            card.style.opacity = '1';
-          }, 50);
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-}
-
-/* ==========================================================================
-   8. INTERACTIVE ROI ESTIMATOR CALCULATOR
+   7. INTERACTIVE ROI ESTIMATOR CALCULATOR (Realistic Metrics)
    ========================================================================== */
 function initEstimator() {
   const budgetRange = document.getElementById('calc-budget-range');
@@ -301,149 +268,46 @@ function updateEstimatorResults() {
   const budget = parseInt(budgetRange.value, 10);
   const goal = goalSelect ? goalSelect.value : 'awareness';
 
-  // Calculations
-  const baseReach = budget * 450;
-  const multiplier = goal === 'awareness' ? 1.4 : goal === 'leads' ? 0.9 : 1.1;
+  // Realistic Impression Estimates: ~40K to 150K impressions for $1.5K - $5K budgets
+  const baseReach = budget * 32;
+  const multiplier = goal === 'awareness' ? 1.25 : goal === 'leads' ? 0.95 : 1.1;
   const estimatedReach = Math.round(baseReach * multiplier);
 
   if (reachValEl) {
-    reachValEl.textContent = `~${(estimatedReach / 1000).toFixed(0)}K - ${( (estimatedReach * 1.5) / 1000 ).toFixed(0)}K`;
+    reachValEl.textContent = `~${(estimatedReach).toLocaleString()} - ${Math.round(estimatedReach * 1.35).toLocaleString()}`;
   }
 
   const isAr = currentLang === 'ar';
 
   if (contentValEl) {
-    if (budget < 2500) {
+    if (budget < 2000) {
       contentValEl.textContent = isAr 
-        ? '8 ريلز سينمائي + إدارة وتنسيق الحساب' 
-        : '8 Cinematic 4K Reels + Feed Management';
-    } else if (budget < 5000) {
+        ? '8 ريلز احترافي + تنسيق وإدارة الحسابات' 
+        : '8 High-Quality Reels + Feed Management';
+    } else if (budget < 4000) {
       contentValEl.textContent = isAr 
-        ? '16 ريلز سينمائي + حملات إعلانات ممولة + ستوريز يومية' 
-        : '16 Cinematic Reels + Paid Ad Scaling + Daily Stories';
+        ? '14 ريلز احترافي + حملات إعلانات ممولة + ستوريز يومية' 
+        : '14 High-Quality Reels + Paid Ad Campaigns + Daily Stories';
     } else {
       contentValEl.textContent = isAr 
-        ? '24+ إنتاج سينمائي + تسويق مؤثرين VIP + تغطية شاملة' 
-        : '24+ Luxury Productions + VIP Influencer Campaigns + Full Domination';
+        ? '20+ إنتاج فيديو فائق الجودة + تسويق مؤثرين + تغطية شاملة' 
+        : '20+ High-Production Videos + Influencer Campaigns + Full Management';
     }
   }
 
   if (pkgValEl) {
-    if (budget < 2500) {
-      pkgValEl.textContent = isAr ? 'باقة النمو الأنيق (Boutique Growth)' : 'The Boutique Growth Tier';
-    } else if (budget < 5000) {
-      pkgValEl.textContent = isAr ? 'باقة التميز والشهرة (Signature Prestige)' : 'The Signature Prestige Tier';
+    if (budget < 2000) {
+      pkgValEl.textContent = isAr ? 'باقة النمو المتكامل (Boutique Growth)' : 'The Boutique Growth Tier';
+    } else if (budget < 4000) {
+      pkgValEl.textContent = isAr ? 'باقة التميز والتوسع (Signature Prestige)' : 'The Signature Prestige Tier';
     } else {
-      pkgValEl.textContent = isAr ? 'باقة الإمبراطورية (Omnichannel Empire)' : 'The Omnichannel Empire Tier';
+      pkgValEl.textContent = isAr ? 'باقة الريادة الشاملة (Omnichannel Growth)' : 'The Omnichannel Growth Tier';
     }
   }
 }
 
 /* ==========================================================================
-   9. CASE STUDY MODAL PREVIEW
-   ========================================================================== */
-function initPortfolioModal() {
-  const modal = document.getElementById('portfolio-modal');
-  const modalClose = document.getElementById('modal-close');
-  const modalBody = document.getElementById('modal-body-content');
-  const viewBtns = document.querySelectorAll('.view-case-btn');
-
-  if (!modal || !modalClose || !modalBody) return;
-
-  const caseData = {
-    1: {
-      en: {
-        title: "Élixir Rouge - Luxury Perfume Launch",
-        stats: "+480% Online Sales Growth | 3.2M+ Reach | 4.8x ROAS",
-        challenge: "A bespoke fragrance brand needed an elite entrance into the Middle Eastern & European markets with a luxury, sultry visual aesthetic.",
-        solution: "We directed high-concept 4K sensory video reels focusing on golden mist, marble textures, and velvet rose aesthetics combined with hyper-targeted Meta conversion ads.",
-        results: "Generated 3.2M organic impressions within 60 days, achieved a 4.8x return on ad spend, and sold out 3 production batches in record time."
-      },
-      ar: {
-        title: "عطور إكسير روج - إطلاق علامة عطور فاخرة",
-        stats: "+480% نمو في المبيعات | +3.2 مليون وصول | 4.8x عائد إعلاني",
-        challenge: "احتاجت دار عطور فاخرة لدخول السوق العربي والأوروبي بهوية بصرية ساحرة تجسد الرقي والجاذبية الاستثنائية.",
-        solution: "أشرفنا على جلسات تصوير سينمائية 4K تركز على انسيابية رذاذ العطر المخملي وأوراق الورد، مع إطلاق حملات إعلانية دقيقة الاستهداف.",
-        results: "تجاوزت المشاهدات 3.2 مليون خلال 60 يوماً، محققة عائداً إعلانياً 4.8 أضعاف ونفاد 3 دفعات إنتاجية بالكامل."
-      }
-    },
-    2: {
-      en: {
-        title: "Royal Crimson Couture - Fashion House Rebrand",
-        stats: "+145K Targeted Followers | 12.4% Engagement Rate",
-        challenge: "An exclusive fashion atelier was struggling with low social media visibility despite having world-class dresses.",
-        solution: "Engineered a high-fashion editorial grid overhaul, produced viral fashion week backstage reels, and orchestrated strategic gifting to elite tastemakers.",
-        results: "Expanded follower base by 145,000 highly targeted fashion enthusiasts and booked custom dress consultations 4 months in advance."
-      },
-      ar: {
-        title: "رويال كريمسون كوتور - إعادة صياغة دار أزياء راقية",
-        stats: "+145 ألف متابع نوعي | 12.4% نسبة تفاعل قياسية",
-        challenge: "عانت دار الأزياء من ضعف التفاعل على وسائل التواصل رغم رقي فساتينها وتصاميمها العالمية.",
-        solution: "أعدنا بناء الهوية البصرية للحساب بالكامل، ونفذنا ريلز احترافية لكواليس أسبوع الموضة وحملات إهداء لنخبة المؤثرات.",
-        results: "نمو الحساب بأكثر من 145 ألف متابع مهتم بالموضة الفاخرة واكتمال مواعيد الاستشارات الخاصة لمدة 4 أشهر مقدماً."
-      }
-    },
-    3: {
-      en: {
-        title: "Opulence Skyline Lounge - Fine Dining & Hospitality",
-        stats: "100% Table Occupancy | 5.6M Video Views",
-        challenge: "A newly opened rooftop dining venue needed consistent high-ticket table reservations and cultural buzz.",
-        solution: "Created viral POV TikTok & Reels content highlighting the champagne experience, city skyline panorama, and celebrity chef specials.",
-        results: "Achieved viral fame with 5.6M views, resulting in complete table bookings 6 weeks in advance every single weekend."
-      },
-      ar: {
-        title: "أوبيولنس لاونج - الضيافة الفاخرة والمطاعم",
-        stats: "100% نسبة إشغال الطاولات | +5.6 مليون مشاهدة",
-        challenge: "احتاج مطعم ولاونج راقٍ جديد إلى جذب رواد التجارب الفاخرة وضمان حجوزات يومية مستمرة.",
-        solution: "صناعة محتوى فيديو بتجربة بصرية فريدة تبرز الإطلالة البانورامية وفخامة المأكولات وأجواء الموسيقى الراقية.",
-        results: "انتشار فيروسي بأكثر من 5.6 مليون مشاهدة، مما أدى لامتلاء الحجوزات لـ 6 أسابيع مقدماً في عطلات نهاية الأسبوع."
-      }
-    }
-  };
-
-  viewBtns.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const id = btn.getAttribute('data-case-id');
-      const data = caseData[id] ? caseData[id][currentLang] : null;
-
-      if (data) {
-        modalBody.innerHTML = `
-          <h2 style="font-family: var(--font-heading-en); color: var(--gold-300); margin-bottom: 0.75rem; font-size: 1.7rem;">${data.title}</h2>
-          <div style="background: rgba(223, 183, 108, 0.1); border: 1px solid var(--gold-500); padding: 0.75rem 1.25rem; border-radius: 8px; color: var(--gold-400); font-weight: bold; margin-bottom: 1.5rem;">
-            ${data.stats}
-          </div>
-          <div style="margin-bottom: 1.25rem;">
-            <h4 style="color: var(--cream-50); margin-bottom: 0.4rem;">${currentLang === 'ar' ? 'التحدي:' : 'The Challenge:'}</h4>
-            <p style="color: var(--cream-muted); font-size: 0.95rem;">${data.challenge}</p>
-          </div>
-          <div style="margin-bottom: 1.25rem;">
-            <h4 style="color: var(--cream-50); margin-bottom: 0.4rem;">${currentLang === 'ar' ? 'استراتيجية وكالة FM:' : 'The FM Strategy:'}</h4>
-            <p style="color: var(--cream-muted); font-size: 0.95rem;">${data.solution}</p>
-          </div>
-          <div>
-            <h4 style="color: var(--cream-50); margin-bottom: 0.4rem;">${currentLang === 'ar' ? 'النتائج المحققة:' : 'The Impact & Results:'}</h4>
-            <p style="color: var(--cream-muted); font-size: 0.95rem;">${data.results}</p>
-          </div>
-        `;
-        modal.classList.add('active');
-      }
-    });
-  });
-
-  modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
-  });
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
-    }
-  });
-}
-
-/* ==========================================================================
-   10. CONTACT FORM & WHATSAPP REDIRECTION
+   8. CONTACT FORM & WHATSAPP REDIRECTION
    ========================================================================== */
 function initContactForm() {
   const form = document.getElementById('consultation-form');
@@ -464,12 +328,12 @@ function initContactForm() {
       return;
     }
 
-    // Compose formatted WhatsApp message
+    // WhatsApp Message in Arabic / English
     const waText = currentLang === 'ar'
       ? `مرحباً أستاذة فاطمة ملحم (وكالة FM Marketing)،%0Aأود طلب استشارة تسويقية لبراند:%0A- الاسم: ${encodeURIComponent(name)}%0A- اسم العلامة: ${encodeURIComponent(brand)}%0A- الخدمة المطلوبة: ${encodeURIComponent(service)}%0A- التفاصيل: ${encodeURIComponent(msg)}`
       : `Hello Fatima Melhem (FM Marketing Agency),%0AI would like to request a strategic consultation:%0A- Name: ${encodeURIComponent(name)}%0A- Brand: ${encodeURIComponent(brand)}%0A- Service: ${encodeURIComponent(service)}%0A- Notes: ${encodeURIComponent(msg)}`;
 
-    // Show luxury toast
+    // Show toast
     if (toast) {
       toast.textContent = currentLang === 'ar' ? '✨ جاري توجيهك للمحادثة المباشرة مع فاطمة ملحم...' : '✨ Redirecting to direct chat with Fatima Melhem...';
       toast.classList.add('show');
@@ -478,7 +342,7 @@ function initContactForm() {
       }, 4000);
     }
 
-    // Direct WhatsApp link
+    // Direct WhatsApp redirect
     setTimeout(() => {
       window.open(`https://wa.me/96170000000?text=${waText}`, '_blank');
       form.reset();
